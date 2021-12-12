@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  /* font-family: "Alfa Slab One", cursive; */
+  body {
+    background-color: black;
+    color: white;
+    font-family: "Lato", sans-serif;
+  }
+  h1 {
+    color: #364fc7;
+    font-family: "Bungee Shade", cursive;
+  }
+
+  footer {
+    width: 100wh; /* Full width */
+  
+    padding: 5px 10px 5px 10px ;
+    background-color: #222;
+    color: #666; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    font-style: italic;
+  }

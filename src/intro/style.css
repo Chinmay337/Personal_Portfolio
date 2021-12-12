@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* font-family: "Alfa Slab One", cursive; */
+body {
+  background-color: black;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+h1 {
+  color: #364fc7;
+  font-family: "Bungee Shade", cursive;
+}
+
+.timeline-link {
+  text-decoration: none;
+  color: white;
+}
+
+span.timeline-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* NAV */
+.nav-header {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  color: #eef;
+  padding: 5px;
+}
+
+footer {
+  width: 100wh; /* Full width */
+
+  padding: 5px 10px 5px 10px;
+  background-color: #222;
+  color: #666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  font-style: italic;
+}
+
+.spacer {
+  height: 5rem;
+}
+
+.intro-content-container {
+  color: white;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 10%;
+  font-family: "Hammersmith One", sans-serif;
+
+  /* border: 2px solid red; */
+}
+
+.box-1 {
+  display: flex;
+  height: 60vh;
+  gap: 10px;
+}
+
+.box-1-left {
+  background-color: #3b5bdb;
+  width: 50%;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.box-1-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  color: white;
+  /* background-color: #ffa8a8; */
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.box-2 {
+  display: flex;
+  height: 60vh;
+  gap: 10px;
+}
+
+.box-2-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.box-2-right {
+  background-color: #d9480f;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 60px;
+}
+
+.box-3 {
+  display: flex;
+  height: 60vh;
+  margin-bottom: 10%;
+  gap: 10px;
+}
+
+.box-3-left {
+  width: 50%;
+  background-color: #c92a2a;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  font-size: 60px;
+}
+
+.box-3-right {
+  width: 50%;
+  margin-bottom: 100px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  /* background-color: #9198e5; */
+  padding: 20px;
+  margin: 10%;
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 40px;
+  color: white;
+  line-height: 1.6;
+}
+
+.content.small {
+  padding: 0px;
+  margin: 0px;
+}
+
+.content-0 {
+  justify-content: left;
+  width: 20%;
+}
+
+.content-2 {
+  justify-content: right;
+  width: 50%;
+  margin-left: 45%;
+}
+
+.content-3 {
+  justify-content: left;
+  width: 60%;
+}
+
+.content-4 {
+  justify-content: center;
+  margin-left: 25%;
+}
+
+.content-5 {
+  justify-content: left;
+  width: 60%;
+}
+
+.head-text {
+  font-size: 10px;
+  transition-property: font-size;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+
+.gradient-text {
+  background-color: red;
+
+  background-image: linear-gradient(
+    45deg,
+    #78eff3,
+    #78eff3,
+    #f783ac,
+    #d9480f,
+    #78eff3,
+    #95d69d,
+    #f783ac,
+    #c92a2a
+  );
+
+  background-size: 100%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.gradient-box-1 {
+  /* Fallback: Set a background color. */
+  background-color: red;
+  font-size: 75px;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #5c7cfa, #ff6b6b);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.gradient-box-2 {
+  /* Fallback: Set a background color. */
+  background-color: red;
+  font-size: 75px;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #ffe066, #f76707, #fff9db);
+
+  /* Set the background size and repeat properties. */
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.gradient-box-3 {
+  /* Fallback: Set a background color. */
+  background-color: red;
+  font-size: 75px;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #c92a2a, #ffdeeb, #e64980);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.head-text-end {
+  font-size: 150px;
+}
+
+.head-text {
+  color: white;
+  font-family: "Rampart One", cursive;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.gear-icon {
+  width: 50px;
+  color: skyblue;
+}
+
+.cloud-icon {
+  width: 50px;
+}
+
+.content-a {
+  display: flex;
+  gap: 200px;
+  padding: 20px;
+  margin: 10%;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 40px;
+  background-color: #212529;
+}
+
+.content-b {
+  display: flex;
+  gap: 200px;
+  padding: 20px;
+  margin: 10%;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: #212529;
+}
+
+.content-a > *:hover {
+  transform: scale(1.1);
+}
+
+.content-b > *:hover {
+  transform: scale(1.1);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.code-icon {
+  width: 50px;
+}
+
+.git-icon {
+  width: 50px;
+}
+.aws-icon {
+  width: 50px;
+}
+
+.js-icon {
+  width: 60px;
+}
+
+.python-icon {
+  width: 60px;
+}
+
+#lead-dev {
+  color: #f3d9fa;
+}
+
+#capone {
+  color: #d0bfff;
+}
+#job-title {
+  color: #ffd8a8;
+}
+
+#job-title-2 {
+  color: #ffc078;
+}
+
+#marketdev {
+  color: #ffa94d;
+}
+
+#infinitive {
+  color: #d9480f;
+}
+
+#masters {
+  color: #ff8787;
+}
+
+#uni {
+  color: #c92a2a;
+}
+
+#major {
+  color: #ff6b6b;
+}
+
+#minor {
+  color: #fa5252;
+}
+
+.hats-description {
+  color: white;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 40px;
+  margin-bottom: 5%;
+}
+
+.hats-bars {
+  /* background-color: skyblue; */
+  width: 50%;
+  height: 30vh;
+  margin-left: 25%;
+  margin-right: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 2rem;
+  gap: 1%;
+}
+
+.hat {
+  border: 1px solid skyblue;
+  border-bottom: none;
+  border-radius: 20px 20px 0px 0px;
+  padding-top: 20px;
+  height: 20px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hat-1 {
+  background-color: #d0ebff;
+  border-color: #d0ebff;
+  transition: height 1.5s ease-in;
+}
+
+.hat-2 {
+  background-color: #a5d8ff;
+  border-color: #a5d8ff;
+  color: #495057;
+  transition: height 1.75s ease-out;
+}
+.hat-3 {
+  background-color: #4dabf7;
+  border-color: #4dabf7;
+  color: #212529;
+  transition: height 2s ease-in-out;
+}
+.hat-4 {
+  background-color: #1971c2;
+  border-color: #1971c2;
+  color: #343a40;
+  transition: height 1s ease-in;
+}
+
+/* Parallax  ---------------------------------------- */
+
+.m-background-image {
+  position: relative;
+  /* opacity: 0.35; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url(../images/spain-mountainsBG.jpg);
+  min-height: 100%;
+}
+
+.content-1 {
+  justify-content: left;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.content-1 div {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.content-1 .right {
+  padding-left: 60%;
+}
+
+/* Goto Top button  ---------------------------------------- */
+
+#gotoTop {
+  display: none;
+  position: fixed;
+  bottom: 20px; /* Bottom Right */
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #525200;
+  color: white; /* Text color */
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#gotoTop:hover {
+  background-color: #bbb;
+}

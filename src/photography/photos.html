@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>.:: Chinmay B : Photography ::.</title>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../nav.css" />
+    <link rel="stylesheet" href="./photos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anonymous+Pro:wght@400;700&family=Genos:wght@300;500&family=Hammersmith+One&family=Lato:wght@100;400&family=Press+Start+2P&family=Raleway:wght@200;300&family=Rampart+One&family=Rubik:wght@300;800&family=Space+Grotesk:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <a href="../index.html">Intro</a>
+          <a href="../timeline/timeline.html">Timeline</a>
+          <a href="../projects/projects.html">Projects</a>
+          <a href="../goals/goals.html">Technology Goals</a>
+          <a href="../hobbies/hobbies.html">Interests + Hobbies</a>
+          <a href="../certs/index.html">Certifications</a>
+          <a href="../photography/photos.html" class="active">Photography</a>
+          <!-- <a class="xright" href="about.asp">About</a> -->
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="main-content">
+        <h1>Photo Gallery</h1>
+      </div>
+
+      <div class="main-gallery-container" id="app">
+        <div class="category-container">
+          <h2>Categories</h2>
+          <input type="checkbox" id="inc-birds" v-model="includeBirds" />
+          <label for="inc-birds">Birds</label><br />
+          <input
+            type="checkbox"
+            id="inc-houses"
+            v-model="includeHouses"
+          /><label for="inc-houses">Houses</label><br />
+          <input type="checkbox" id="inc-nature" v-model="includeNaure" /><label
+            for="inc-nature"
+            >Nature</label
+          ><br />
+
+          <!-- The Image Modal -->
+          <div id="modalImage" class="modal">
+            <span class="close" v-on:click="closeModal">&times;</span>
+            <!-- Modal Content (The Image) -->
+
+            <img class="modal-content" v-bind:src="modalImageSrc" />
+
+            <!-- Modal Caption (Image Text) -->
+            <div class="descr">{{ modalImageDescr }}</div>
+          </div>
+        </div>
+
+        <div class="gallery-container">
+          <transition-group name="list" tag="div">
+            <div
+              class="gallery-item"
+              v-for="image in filteredImages"
+              v-bind:key="image.file"
+              v-on:click="imageClicked(image.file, image.desc)"
+            >
+              <img v-bind:src="image.file" v-bind:alt="image.title" />
+              <div class="desc">{{ image.desc }}</div>
+            </div>
+          </transition-group>
+        </div>
+      </div>
+    </section>
+    <footer>&copy; 2021, Chinmay B</footer>
+    <script src="./photos.js"></script>
+  </body>
+</html>

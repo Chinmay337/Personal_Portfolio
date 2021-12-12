@@ -1,0 +1,2 @@
+- Scroll animations - fading elements
+- https://www.youtube.com/watch?v=huVJW23JHKQ
