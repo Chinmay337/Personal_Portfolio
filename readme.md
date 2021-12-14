@@ -8,6 +8,7 @@
 - The header is on a 12 sec loop to animate through gradient colors to change the color
 - Responsive design using flexbox is used everywhere , certifications page has a responsible gridbox using css grid
 - Used ES6 everywhere in the JS files
+- Added smooth scrolling for the scroll to top component on all pages
 
 <h2> Overview of Pages <h2>
 
