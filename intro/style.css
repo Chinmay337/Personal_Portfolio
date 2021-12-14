@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 /* font-family: "Alfa Slab One", cursive; */
 body {
   background-color: black;
@@ -37,7 +41,7 @@ span.timeline-link {
 }
 
 footer {
-  width: 100wh; /* Full width */
+  width: 100vw; /* Full width */
 
   padding: 5px 10px 5px 10px;
   background-color: #222;

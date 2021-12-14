@@ -27,9 +27,10 @@ section {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   .certs-list {
     grid-template-columns: 1fr;
+    row-gap: 50px;
   }
 }
 
@@ -53,7 +54,7 @@ section {
 }
 
 .thoughts {
-  width: 100wh;
+  width: 100vw;
   text-align: center;
 }
 

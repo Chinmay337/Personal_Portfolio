@@ -241,12 +241,6 @@
   /* border-radius: 40px; */
 }
 
-.active {
-  color: linear-gradient(45deg, #364fc7, #862e9c);
-  animation: gradient 2s linear infinite;
-  animation-direction: alternate;
-}
-
 @keyframes gradient {
   0% {
     background-position: 0%;

@@ -2,6 +2,13 @@
 
 <h2> Personal Portfolio Project </h2>
 
+<h2> Extra Credit </h2>
+
+- Added async/await and fetch to fetch the list of images from a JSON file in photos.js under the photography file
+- The header is on a 12 sec loop to animate through gradient colors to change the color
+- Responsive design using flexbox is used everywhere , certifications page has a responsible gridbox using css grid
+- Used ES6 everywhere in the JS files
+
 <h2> Overview of Pages <h2>
 
 <h3> 1. Intro Page </h3>
