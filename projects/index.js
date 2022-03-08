@@ -10,14 +10,18 @@
 
 // pythonbot = selenium , python
 
-const awsml = document.querySelector(".project-1");
-const deploymentTracker = document.querySelector(".project-2");
-const datadogTool = document.querySelector(".project-3");
-const linuxTool = document.querySelector(".project-4");
-const reactVideo = document.querySelector(".project-5");
-const pythonBot = document.querySelector(".project-6");
+const datasources = document.querySelector(".project-1");
+const dummystock = document.querySelector(".project-2");
+const awsml = document.querySelector(".project-3");
+const deploymentTracker = document.querySelector(".project-4");
+const datadogTool = document.querySelector(".project-5");
+const linuxTool = document.querySelector(".project-6");
+const reactVideo = document.querySelector(".project-7");
+const pythonBot = document.querySelector(".project-8");
 
 const projects = [
+  datasources,
+  dummystock,
   awsml,
   deploymentTracker,
   datadogTool,
@@ -64,6 +68,29 @@ function highlightProject(newProject, newContents) {
     projectDescription.style.opacity = 1;
   }, 500);
 }
+datasources.addEventListener("click", () => {
+  updateIcons("datasources", true);
+  highlightProject(
+    datasources,
+    `Created a UI to interface with data using TypeScript and React. </br>
+    Introduced a build process hosted on an Amazon Linux 2 server to dynamically update the UI. </br>
+    Used a NodeJS script using ZX to parse from a file staged on the repo , rebuild the app, and deploy whenever the script is kicked off. </br>
+    Implemented a minimalist mode and a color rich mode for the UI which can be toggled from a button. </br>
+    Used Redux to hook the selected data sources to Global State to easily integrate with features introduced in the future.
+    `
+  );
+});
+
+dummystock.addEventListener("click", () => {
+  updateIcons("dummystock", false);
+  highlightProject(
+    dummystock,
+    `Created a full stack web app using a VueJS Frontend and a NodeJS Express Server for the backend. </br>
+    Users can log in and buy or sell stock tickers and view their portfolio. Implemented an admin functionality which can add/remove/update users in the application and add Balance to their accounts. </br>
+    Pulls data in real time using the Yahoo finance API and visualizes profit loss for users.
+    `
+  );
+});
 
 awsml.addEventListener("click", () => {
   updateIcons("aws-ml", true);
